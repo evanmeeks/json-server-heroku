@@ -1,18 +1,158 @@
-import { Component } from '@angular/core';
-
-
-@Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
-})
-export class AppComponent  {
-  name = 'Angular 5';
-  jsonDataKeys : any=[];
-
-  jsonData : any =[{
+{
     "ResultsLayoutTemplateName": "Default",
-    "ExperimentInfo": {},
+    "ExperimentInfo": {
+        "AppliedExperiment": [
+            "Turn On Location Services",
+            "ShowAutoSuggestCategories",
+            "DellEMCD",
+            "NewPromotedDocuments",
+            "UnlimitedTopProducts",
+            "DegradedMasthead",
+            "PromoteProductsByActivity",
+            "SortCategoriesByActivity",
+            "AutoCategorize",
+            "GridView",
+            "Reset On New Search",
+            "Masthead / Footer"
+        ],
+        "Experiments": [
+            {
+                "Id": "Turn On Location Services",
+                "Description": "Location Services - Turn On Location Services",
+                "Layer": "Location Services"
+            },
+            {
+                "Id": "ShowAutoSuggestCategories",
+                "Description": "Category Suggestions - ShowAutoSuggestCategories",
+                "Layer": "Category Suggestions"
+            },
+            {
+                "Id": "ShowPowerBars",
+                "Description": "Systems Specifications - ShowPowerBars",
+                "Layer": "Systems Specifications"
+            },
+            {
+                "Id": "ShowSignalBars",
+                "Description": "Systems Specifications - ShowSignalBars",
+                "Layer": "Systems Specifications"
+            },
+            {
+                "Id": "DellEMCD",
+                "Description": "Navigation - DellEMCD",
+                "Layer": "Navigation"
+            },
+            {
+                "Id": "DellEMCL",
+                "Description": "Navigation - DellEMCL",
+                "Layer": "Navigation"
+            },
+            {
+                "Id": "Show Left Nav",
+                "Description": "Navigation - Show Left Nav",
+                "Layer": "Navigation"
+            },
+            {
+                "Id": "Use Dynamic VA",
+                "Description": "Navigation - Use Dynamic VA",
+                "Layer": "Navigation"
+            },
+            {
+                "Id": "ProdDisambiguator",
+                "Description": "Product Disambiguation - ProdDisambiguator",
+                "Layer": "Product Disambiguation"
+            },
+            {
+                "Id": "EstimatedShipDateControllerTime",
+                "Description": "Estimated Ship Date - EstimatedShipDateControllerTime",
+                "Layer": "Estimated Ship Date"
+            },
+            {
+                "Id": "NewPromotedDocuments",
+                "Description": "Document Ranking - NewPromotedDocuments",
+                "Layer": "Document Ranking"
+            },
+            {
+                "Id": "Show Financing",
+                "Description": "Financing - Show Financing",
+                "Layer": "Financing"
+            },
+            {
+                "Id": "OneTopProduct",
+                "Description": "Trending Products - OneTopProduct",
+                "Layer": "Trending Products"
+            },
+            {
+                "Id": "TwoTopProducts",
+                "Description": "Trending Products - TwoTopProducts",
+                "Layer": "Trending Products"
+            },
+            {
+                "Id": "UnlimitedTopProducts",
+                "Description": "Trending Products - UnlimitedTopProducts",
+                "Layer": "Trending Products"
+            },
+            {
+                "Id": "CompatibleProducts",
+                "Description": "TopCompatibleProducts - CompatibleProducts",
+                "Layer": "TopCompatibleProducts"
+            },
+            {
+                "Id": "DegradedMasthead",
+                "Description": "Premier Experience - DegradedMasthead",
+                "Layer": "Premier Experience"
+            },
+            {
+                "Id": "Show Technical Specifications",
+                "Description": "Accessory Product Stack - Show Technical Specifications",
+                "Layer": "Accessory Product Stack"
+            },
+            {
+                "Id": "ProductSelector",
+                "Description": "ProductSelector - ProductSelector",
+                "Layer": "ProductSelector"
+            },
+            {
+                "Id": "PromoteProductsByActivity",
+                "Description": "Analytics-Activity - PromoteProductsByActivity",
+                "Layer": "Analytics-Activity"
+            },
+            {
+                "Id": "SortCategoriesByActivity",
+                "Description": "Analytics-Category - SortCategoriesByActivity",
+                "Layer": "Analytics-Category"
+            },
+            {
+                "Id": "AutoCategorize",
+                "Description": "ProductCategories - AutoCategorize",
+                "Layer": "ProductCategories"
+            },
+            {
+                "Id": "GridView",
+                "Description": "ResultLayout - GridView",
+                "Layer": "ResultLayout"
+            },
+            {
+                "Id": "Reset On New Search",
+                "Description": "Sorting - Reset On New Search",
+                "Layer": "Sorting"
+            },
+            {
+                "Id": "Reset on Change Category",
+                "Description": "Sorting - Reset on Change Category",
+                "Layer": "Sorting"
+            },
+            {
+                "Id": "ShowPromotedBanner",
+                "Description": "Badges - ShowPromotedBanner",
+                "Layer": "Badges"
+            },
+            {
+                "Id": "Masthead / Footer",
+                "Description": "Layout - Masthead / Footer",
+                "Layer": "Layout"
+            }
+        ]
+    },
     "RelevancyModel": null,
     "QU": null,
     "BuildNumber": "8.19.1271.0",
@@ -419,7 +559,7 @@ export class AppComponent  {
                             }
                         ]
                     },
-                    {c
+                    {
                         "CategoryPath": "prod/2999/4009/6481/8141",
                         "CategoryLabel": "Monitors",
                         "Refinements": [
@@ -3456,17 +3596,4 @@ export class AppComponent  {
     "ResponseOptionFlags": {
         "AddToHistory": false
     }
-}];
-
-constructor(){
-  for(let arr of this.jsonData){
-       Object.keys(arr) && Object.keys(arr).map((key)=>{
-          console.log("push")
-          this.jsonDataKeys.push(key);
-        });
-    }
 }
-
-}
-
-
