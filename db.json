@@ -1,4 +1,4 @@
-{
+[{
     "ResultsLayoutTemplateName": "Default",
     "ExperimentInfo": {
         "AppliedExperiment": [
@@ -3596,4 +3596,4 @@
     "ResponseOptionFlags": {
         "AddToHistory": false
     }
-}
+}]
