@@ -1,16 +1,3471 @@
-{
-  "posts":[
-    {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent  {
+  name = 'Angular 5';
+  jsonDataKeys : any=[];
+
+  jsonData : any =[{
+    "ResultsLayoutTemplateName": "Default",
+    "ExperimentInfo": {},
+    "RelevancyModel": null,
+    "QU": null,
+    "BuildNumber": "8.19.1271.0",
+    "SliceName": "BLUE",
+    "Refinements": null,
+    "Signals": null,
+    "Strategies": null,
+    "Results": [
+        {
+            "Data": {
+                "Links": [
+                    {
+                        "LinkText": "Contact Us 1-800-387-5752",
+                        "LinkUrl": "#"
+                    }
+                ]
+            },
+            "TemplateName": "EssentialContent",
+            "TemplateId": null,
+            "Purpose": "Content",
+            "UserQuery": null,
+            "FastQuery": null,
+            "ResultCount": 0,
+            "StrategyName": "EssentialContentStrategy",
+            "StrategyHandlerName": "EssentialContentStrategyHandler"
+        },
+        {
+            "Data": {
+                "Links": [
+                    {
+                        "LinkText": "Not finding what you're looking for? Dell offers products that may not be available under your organization's contract with Dell. Contact your Dell representative to determine which products are eligible to add to your store.",
+                        "LinkUrl": "#"
+                    }
+                ]
+            },
+            "TemplateName": "TertiaryContent",
+            "TemplateId": null,
+            "Purpose": "Content",
+            "UserQuery": null,
+            "FastQuery": null,
+            "ResultCount": 0,
+            "StrategyName": "TertiaryContentStrategy",
+            "StrategyHandlerName": "TertiaryContentStrategyHandler"
+        },
+        {
+            "Data": {
+                "relevance": "",
+                "brand": "mfgname,asc",
+                "topSeller": null,
+                "prcLtoH": null,
+                "prcHtoL": null,
+                "rating": null,
+                "reviewed": null,
+                "SelectedSort": ",",
+                "includeViewTypeButton": true,
+                "hideSortingDropDownButttons": false,
+                "sortingReset": false
+            },
+            "TemplateName": "SortingDropdown",
+            "TemplateId": null,
+            "Purpose": null,
+            "UserQuery": null,
+            "FastQuery": null,
+            "ResultCount": 0,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": null
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AMLL",
+                "Description": "[{\"Id\":\"108137\",\"Name\":\"Diagonal Viewing Size:\",\"Value\":\"63.44 cm<br>25 inches\"},{\"Id\":\"108138\",\"Name\":\"Panel Type:\",\"Value\":\"In-Plane switching Technology\"},{\"Id\":\"108139\",\"Name\":\"Display Screen Coating:\",\"Value\":\"Anti-glare treatment of the front polarizer (3H) hard coating\"},{\"Id\":\"108140\",\"Name\":\"Backlight Technology:\",\"Value\":\"LED\"},{\"Id\":\"108141\",\"Name\":\"Aspect Ratio:\",\"Value\":\"16:9\"},{\"Id\":\"108142\",\"Name\":\"Maximum Preset Resolution\",\"Value\":\"2560 x 1440 at 60 Hz\"},{\"Id\":\"108143\",\"Name\":\"Viewing Angle:\",\"Value\":\"178° vertical / 178° horizontal\"},{\"Id\":\"108144\",\"Name\":\"Pixel Pitch:\",\"Value\":\"0.216 mm x 0.216 mm\"},{\"Id\":\"108145\",\"Name\":\"Pixel Per Inch (PPI):\",\"Value\":\"117.5\"},{\"Id\":\"108146\",\"Name\":\"Contrast Ratio:\",\"Value\":\"1000 to 1 (typical)\"},{\"Id\":\"108147\",\"Name\":\"Brightness:\",\"Value\":\"350 cd/m² (typical)\"},{\"Id\":\"108148\",\"Name\":\"Response Time:\",\"Value\":\"5ms (gray to gray)\"},{\"Id\":\"108149\",\"Name\":\"Flat Panel Mount Interface:\",\"Value\":\"VESA (100 mm)\"},{\"Id\":\"108150\",\"Name\":\"Adjustability:\",\"Value\":\"Height adjustable (130 mm),<br>Tilt (-5° to 21°)<br>Swivel (-45° to 45°)<br>Pivot (90°, clockwise & anti-clockwise directions)\"},{\"Id\":\"108151\",\"Name\":\"PbP / PiP:\",\"Value\":\"PbP (No)<br>PiP (No)\"},{\"Id\":\"108152\",\"Name\":\"Daisy Chain Availability:\",\"Value\":\"Yes\"},{\"Id\":\"108153\",\"Name\":\"Dell Display Manager Compatibility:\",\"Value\":\"Yes , Easy Arrange and other key features\"},{\"Id\":\"108154\",\"Name\":\"Remote Asset Management:\",\"Value\":\"Yes, via Dell Command |Monitor\"},{\"Id\":\"108155\",\"Name\":\"Specifications - Service / Support Details:\",\"Value\":\"3-Year Advanced Exchange Service and Premium Panel Guarantee\"},{\"Id\":\"108156\",\"Name\":\"Color Support:\",\"Value\":\"Color Gamut (typical): 99% sRGB, 99% REC709, 79.3% DCI-P3<br>Color Depth: 16.7 Million colors\"},{\"Id\":\"108157\",\"Name\":\"Color Calibration Accuracy:\",\"Value\":\"Delta E < 2(average)\"},{\"Id\":\"108158\",\"Name\":\"Color Calibration SDK SW:\",\"Value\":\"No\"},{\"Id\":\"108159\",\"Name\":\"Color Calibration with X-rite colorimeter:\",\"Value\":\"No\"},{\"Id\":\"108160\",\"Name\":\"Connectivity\",\"Value\":\"1 x DP (ver. 1.2)<br>1 x mDP (ver. 1.2)<br>1 x DP (ver. 1.2) out with MST<br>1 x HDMI (ver. 2.0)<br>1 x USB 3.0 port - Upstream<br>4 x USB 3.0 ports , including 2 x USB3.0 BC1.2 charging capability at 2A (max)\"},{\"Id\":\"108161\",\"Name\":\"Audio Output:\",\"Value\":\"1 x Audio line-out\"},{\"Id\":\"108162\",\"Name\":\"What's in the Box\",\"Value\":\"Monitor with stand<br>1 x Power cable<br>1 x mDP-DP cable<br>1 x USB 3.0 upstream cable<br>Drivers and documentation media<br>Quick setup guide<br>Safety, Environmental, and Regulatory Information<br>Factory Calibration Report\"},{\"Id\":\"108163\",\"Name\":\"Operating system supported\",\"Value\":\"Windows 10, 8.1. 7\"},{\"Id\":\"108164\",\"Name\":\"Built-in Devices\",\"Value\":\"USB3.0 super-speed Hub (4 x USB3.0 downstream ports, including 2x USB 3.0 BC1.2 charging port at 2A max.)\"},{\"Id\":\"108165\",\"Name\":\"Security\",\"Value\":\"Security lock slot (cable lock sold separately)<br>Anti-theft stand lock slot (to panel)\"},{\"Id\":\"108166\",\"Name\":\"Dimensions (with stand)\",\"Value\":\"Height with stand (Compressed ~ Extended): 397.2 mm ~ 527.2 mm 15.64\\\" ~ 20.76\\\"<br>Depth: 200.1 mm 7.88 inches<br>Width:  567.6 mm 22.35\\\"\"},{\"Id\":\"108167\",\"Name\":\"Dimensions (without stand)\",\"Value\":\"Height without stand: 331.5 mm 13.05\\\"<br>Depth without stand: 49.2 mm 1.94\\\"<br>Width without stand: 567.6 mm 22.35\\\"\"},{\"Id\":\"108168\",\"Name\":\"Weight (panel only - for VESA mount)\",\"Value\":\"3.44 kg<br>7.58 lb\"},{\"Id\":\"108169\",\"Name\":\"Weight (with packaging)\",\"Value\":\"8.33 kg<br>18.36 lb\"},{\"Id\":\"108170\",\"Name\":\"Preset Display Area(H X V):\",\"Value\":\"552.96 mm x 311.04 mm<br>21.77\\\" x 12.25\\\"<br>171992.7 sq-mm (266.59 sq-inches)\"},{\"Id\":\"108171\",\"Name\":\"Temperature Range:\",\"Value\":\"Operating: 0°C to 40°C (32°F to 104°F)<br>Non-operating: –20°C to 60°C (–4°F to 140°F)\"},{\"Id\":\"108172\",\"Name\":\"Humidity Range:\",\"Value\":\"Operating: 10% to 80% (non-condensing)<br>Non-Operating:5% to 90% (non-condensing)\"},{\"Id\":\"108173\",\"Name\":\"Altitude:\",\"Value\":\"Operating: 5,000 m (16,404 ft) max<br>Non-Operating: 12,192 m (40,000 ft) max\"},{\"Id\":\"108174\",\"Name\":\"Voltage Required:\",\"Value\":\"100-240 VAC / 50 or 60 Hz ± 3 Hz / 1.6 A (maximum)\"},{\"Id\":\"108175\",\"Name\":\"Power Consumption (Operational):\",\"Value\":\"28W (typical) / 110W (maximum) / 23.81W (Energy Star)\"},{\"Id\":\"108176\",\"Name\":\"Power Consumption Stand by / Sleep:\",\"Value\":\"Less than 0.5W\"},{\"Id\":\"108177\",\"Name\":\"Compliance and Standards\",\"Value\":\"Energy Star certified<br>EPEAT Gold<br>TCO Certified Display<br>RoHS Compliant\"}]",
+                "EstimatedShipDate": "2/19/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AMLL_v2/210-AMLL_v2.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "TMJ07",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AMLL",
+                "OrderCode": "U2518DSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AMLL",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$350.99",
+                    "TotalDiscount": "$99.00",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$449.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-14T18:23:43-06:00",
+                "ProductId": "210-AMLL",
+                "Purpose": "STP",
+                "Rank": "1079878",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24957",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25256",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "654",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2817",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "715",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23218",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23220",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23229",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1404",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25410",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2564",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23282",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25146",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2822",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2828",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "19846",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2840",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "148",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24275",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24276",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "324",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "801",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "126",
+                                "Label": "25\" - 43\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "131",
+                                "Label": "Premium",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {c
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2542",
+                                "Label": "Dell UltraSharp",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2550",
+                                "Label": "25\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "267",
+                                "RefinerLabel": "Technology",
+                                "Id": "19856",
+                                "Label": "HDR",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "267",
+                                "RefinerLabel": "Technology",
+                                "Id": "2561",
+                                "Label": "Infinity Edge",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2567",
+                                "Label": "Mini DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2583",
+                                "Label": "2560 x 1440",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2584",
+                                "Label": "2560 x 1600",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "39",
+                                "RefinerLabel": "Price",
+                                "Id": "156",
+                                "Label": "$201 - $300",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "69",
+                                "RefinerLabel": "Price",
+                                "Id": "331",
+                                "Label": "$201 - $400",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "1",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "300",
+                "TimeToShip": "",
+                "Title": "Dell UltraSharp 25 Monitor: U2518D"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AIIL",
+                "Description": "",
+                "EstimatedShipDate": "2/16/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AIIL_responsive/210-AIIL_responsive.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "06K3P",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AIIL",
+                "OrderCode": "P1917SWSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AIIL",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$179.39",
+                    "TotalDiscount": "$50.60",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$229.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-16T06:21:42-06:00",
+                "ProductId": "210-AIIL",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24955",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25254",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "652",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "712",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23219",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1401",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25408",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23281",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25146",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2820",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23509",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "136",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25310",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23311",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24275",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24276",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "5",
+                                "Label": "20\" & Below",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "130",
+                                "Label": "P Models",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2543",
+                                "Label": "Dell P Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2546",
+                                "Label": "19\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2568",
+                                "Label": "VGA",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "270",
+                                "RefinerLabel": "Response Time",
+                                "Id": "2575",
+                                "Label": "6 ms",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "2",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "299",
+                "TimeToShip": "",
+                "Title": "Dell 19 Monitor - P1917S Without stand"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AHHP",
+                "Description": "[{\"Id\":\"T0000195\",\"Name\":\"Display Type\",\"Value\":\"LED-backlit LCD monitor / TFT active matrix\"},{\"Id\":\"T0002026\",\"Name\":\"Energy Class\",\"Value\":\"Class A\"},{\"Id\":\"T0000236\",\"Name\":\"Diagonal Size\",\"Value\":\"27\\\"\"},{\"Id\":\"T0000237\",\"Name\":\"Viewable Size\",\"Value\":\"27\\\"\"},{\"Id\":\"T0000117\",\"Name\":\"Built-in Devices\",\"Value\":\"USB 3.0 hub\"},{\"Id\":\"T0003356\",\"Name\":\"Panel Type\",\"Value\":\"IPS\"},{\"Id\":\"T0001935\",\"Name\":\"Aspect Ratio\",\"Value\":\"Widescreen - 16:9\"},{\"Id\":\"T0002261\",\"Name\":\"Native Resolution\",\"Value\":\"QHD 2560 x 1440 at 60 Hz\"},{\"Id\":\"T0000648\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.2331 mm\"},{\"Id\":\"T0000810\",\"Name\":\"Brightness\",\"Value\":\"350 cd/m²\"},{\"Id\":\"T0003350\",\"Name\":\"Contrast Ratio\",\"Value\":\"1000:1\"},{\"Id\":\"T0000174\",\"Name\":\"Color Support\",\"Value\":\"16.7 million colors\"},{\"Id\":\"T0000283\",\"Name\":\"Response Time\",\"Value\":\"8 ms (typical); 6 ms (fast)\"},{\"Id\":\"T0003361\",\"Name\":\"Vertical Refresh Rate\",\"Value\":\"50 - 75 Hz\"},{\"Id\":\"T0003362\",\"Name\":\"Horizontal Refresh Rate\",\"Value\":\"30 - 88 kHz\"},{\"Id\":\"T0000248\",\"Name\":\"Video Bandwidth\",\"Value\":\"241.5 MHz\"},{\"Id\":\"T0003351\",\"Name\":\"Horizontal Viewing Angle\",\"Value\":\"178\"},{\"Id\":\"T0003352\",\"Name\":\"Vertical Viewing Angle\",\"Value\":\"178\"},{\"Id\":\"T0003357\",\"Name\":\"Screen Coating\",\"Value\":\"Anti-glare, 3H Hard Coating\"},{\"Id\":\"T0003358\",\"Name\":\"Backlight Technology\",\"Value\":\"LED backlight\"},{\"Id\":\"T0001081\",\"Name\":\"Color Temperature\",\"Value\":\"9300K, 5000K, 6500K, 7500K, 10000K, 5700K\"},{\"Id\":\"T0003353\",\"Name\":\"Controls & Adjustments\",\"Value\":\"Brightness, contrast, sharpness, saturation, input select, color temperature, hue, aspect control\"},{\"Id\":\"T0000281\",\"Name\":\"OSD Languages\",\"Value\":\"Chinese (simplified), Brazilian Portuguese, English, German, French, Russian, Spanish, Japanese\"},{\"Id\":\"T0000015\",\"Name\":\"Features\",\"Value\":\"LED edgelight system, Mobile High-Definition Link (MHL), stand lock, 99% sRGB color gamut\"},{\"Id\":\"T0000118\",\"Name\":\"Color\",\"Value\":\"Black\"},{\"Id\":\"T0001410\",\"Name\":\"Dimensions (WxDxH)\",\"Value\":\"24.1 in x 7.7 in x 14.2 in - with stand\"},{\"Id\":\"T0000022\",\"Name\":\"Weight\",\"Value\":\"14.99 lbs\"},{\"Id\":\"T0000051\",\"Name\":\"Interfaces\",\"Value\":\"<ul><li>MHL / HDMI</li><li>DisplayPort output (MST)</li><li>DisplayPort</li><li>Mini DisplayPort</li><li>USB 3.0 upstream</li><li>4 x USB 3.0 downstream</li><li>Audio line-out</li></ul>\"},{\"Id\":\"T0003354\",\"Name\":\"Display Position Adjustments\",\"Value\":\"Height, pivot (rotation), swivel, tilt\"},{\"Id\":\"T0001856\",\"Name\":\"Tilt Angle\",\"Value\":\"61\"},{\"Id\":\"T0003196\",\"Name\":\"Swivel Angle\",\"Value\":\"180\"},{\"Id\":\"T0001857\",\"Name\":\"Rotation Angle\",\"Value\":\"360\"},{\"Id\":\"T0003061\",\"Name\":\"Height Adjustment\",\"Value\":\"6.3 in\"},{\"Id\":\"T0000806\",\"Name\":\"Flat Panel Mount Interface\",\"Value\":\"100 x 100 mm\"},{\"Id\":\"T0000015\",\"Name\":\"Features\",\"Value\":\"Security lock slot (cable lock sold separately), integrated cable management, VESA interface support\"},{\"Id\":\"T0000334\",\"Name\":\"Included Accessories\",\"Value\":\"Flexible monitor arm\"},{\"Id\":\"T0000098\",\"Name\":\"Cables Included\",\"Value\":\"<ul><li>1 x USB cable - 6 ft</li><li>1 x Mini DisplayPort-DisplayPort cable - 6 ft</li></ul>\"},{\"Id\":\"T0000049\",\"Name\":\"Compliant Standards\",\"Value\":\"Plug and Play, VESA EDID, FCC, DDC/CI, RoHS, TCO Displays\"},{\"Id\":\"T0000054\",\"Name\":\"Voltage Required\",\"Value\":\"AC 120/230 V (50/60 Hz)\"},{\"Id\":\"T0000055\",\"Name\":\"Power Consumption Operational\",\"Value\":\"74 Watt\"},{\"Id\":\"T0003738\",\"Name\":\"Power Consumption Stand by\",\"Value\":\"0.5 Watt\"},{\"Id\":\"T0000874\",\"Name\":\"Power Consumption Sleep\",\"Value\":\"0.3 Watt\"},{\"Id\":\"T0003359\",\"Name\":\"Included Software\",\"Value\":\"Drivers & Utilities, Dell Display Manager\"},{\"Id\":\"T0000827\",\"Name\":\"Dimensions & Weight Details\",\"Value\":\"<ul><li>With stand - width: 24.1 in - depth: 7.7 in - height: 14.2 in - weight: 15 lbs</li><li>Without stand - width: 24.1 in - depth: 1.9 in - height: 14 in - weight: 9.9 lbs</li></ul>\"},{\"Id\":\"T0005126\",\"Name\":\"ENERGY STAR Certified\",\"Value\":\"Yes\"},{\"Id\":\"T0000100\",\"Name\":\"Min Operating Temperature\",\"Value\":\"32 °F\"},{\"Id\":\"T0000101\",\"Name\":\"Max Operating Temperature\",\"Value\":\"104 °F\"},{\"Id\":\"T0000107\",\"Name\":\"Humidity Range Operating\",\"Value\":\"10 - 80% (non-condensing)\"},{\"Id\":\"Q0000055\",\"Name\":\"Device Type\",\"Value\":\"LED-backlit LCD monitor - 27\\\"\"},{\"Id\":\"Q0000819\",\"Name\":\"Energy Class\",\"Value\":\"Class A\"},{\"Id\":\"Q0000012\",\"Name\":\"Features\",\"Value\":\"USB 3.0 hub\"},{\"Id\":\"Q0001568\",\"Name\":\"Panel Type\",\"Value\":\"IPS\"},{\"Id\":\"Q0000762\",\"Name\":\"Aspect Ratio\",\"Value\":\"Widescreen - 16:9\"},{\"Id\":\"Q0000980\",\"Name\":\"Native Resolution\",\"Value\":\"QHD 2560 x 1440 at 60 Hz\"},{\"Id\":\"Q0001563\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.2331 mm\"},{\"Id\":\"Q0001564\",\"Name\":\"Brightness\",\"Value\":\"350 cd/m²\"},{\"Id\":\"Q0001565\",\"Name\":\"Contrast Ratio\",\"Value\":\"1000:1\"},{\"Id\":\"Q0000221\",\"Name\":\"Response Time\",\"Value\":\"8 ms (typical); 6 ms (fast)\"},{\"Id\":\"Q0000097\",\"Name\":\"Color Support\",\"Value\":\"16.7 million colors\"},{\"Id\":\"Q0001566\",\"Name\":\"Input Connectors\",\"Value\":\"HDMI (MHL), DisplayPort, Mini DisplayPort\"},{\"Id\":\"Q0001567\",\"Name\":\"Display Position Adjustments\",\"Value\":\"Height, pivot (rotation), swivel, tilt\"},{\"Id\":\"Q0001569\",\"Name\":\"Screen Coating\",\"Value\":\"Anti-glare, 3H Hard Coating\"},{\"Id\":\"Q0000239\",\"Name\":\"Color\",\"Value\":\"Black\"},{\"Id\":\"Q0002322\",\"Name\":\"Dimensions (WxDxH) - with stand\",\"Value\":\"24.1 in x 7.7 in x 14.2 in\"},{\"Id\":\"Q0000016\",\"Name\":\"Weight\",\"Value\":\"14.99 lbs\"},{\"Id\":\"Q0001359\",\"Name\":\"Environmental Standards\",\"Value\":\"ENERGY STAR Qualified\"},{\"Id\":\"Q0000059\",\"Name\":\"Compliant Standards\",\"Value\":\"Plug and Play, VESA EDID, FCC, DDC/CI, RoHS, TCO Displays\"}]",
+                "EstimatedShipDate": "2/16/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AHHP_v2/210-AHHP_v2.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "KTK54",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AHHP",
+                "OrderCode": "U2717DASAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AHHP",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$530.39",
+                    "TotalDiscount": "$149.60",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$679.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-16T06:22:46-06:00",
+                "ProductId": "210-AHHP",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25256",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "654",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2817",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "715",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23218",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23220",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23229",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1404",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25410",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23283",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25147",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25227",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2844",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2828",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "148",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24277",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "324",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "801",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "126",
+                                "Label": "25\" - 43\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "131",
+                                "Label": "Premium",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "19833",
+                                "Label": "Dell C Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2542",
+                                "Label": "Dell UltraSharp",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2551",
+                                "Label": "27\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2567",
+                                "Label": "Mini DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2570",
+                                "Label": "MHL",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "270",
+                                "RefinerLabel": "Response Time",
+                                "Id": "2575",
+                                "Label": "6 ms",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2583",
+                                "Label": "2560 x 1440",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2584",
+                                "Label": "2560 x 1600",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "39",
+                                "RefinerLabel": "Price",
+                                "Id": "159",
+                                "Label": "$501 - $600",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "69",
+                                "RefinerLabel": "Price",
+                                "Id": "333",
+                                "Label": "More Than $500",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "3",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "299",
+                "TimeToShip": "",
+                "Title": "Dell UltraSharp 27 InfinityEdge Monitor with Arm - U2717DA"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AIWG",
+                "Description": "[{\"Id\":\"T0000195\",\"Name\":\"Display Type\",\"Value\":\"LED-backlit LCD monitor / TFT active matrix\"},{\"Id\":\"T0002261\",\"Name\":\"Native Resolution\",\"Value\":\"1920 x 1080 at 60Hz\"},{\"Id\":\"T0000648\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.275 mm x 0.275 mm\"},{\"Id\":\"T0000810\",\"Name\":\"Brightness\",\"Value\":\"250 cd/m² (typical)\"},{\"Id\":\"T0003350\",\"Name\":\"Contrast Ratio\",\"Value\":\"1000: 1 (typical)\"},{\"Id\":\"T0000174\",\"Name\":\"Color Support\",\"Value\":\"Color Gamut (typical): 87% (CIE 1976), 72% (CIE 1931) / Color Depth: 16.7 Million colors\"},{\"Id\":\"T0003351\",\"Name\":\"Horizontal Viewing Angle\",\"Value\":\"178°\"},{\"Id\":\"T0003352\",\"Name\":\"Vertical Viewing Angle\",\"Value\":\"178°\"},{\"Id\":\"T0003357\",\"Name\":\"Screen Coating\",\"Value\":\"Antiglare with 3H hardness\"},{\"Id\":\"T0001410\",\"Name\":\"Dimensions (WxDxH)\",\"Value\":\"22.1 in x 7.1 in x 16.7 in - with stand\"},{\"Id\":\"T0000236\",\"Name\":\"Diagonal Size\",\"Value\":\"24\\\"\"},{\"Id\":\"T0000237\",\"Name\":\"Viewable Size\",\"Value\":\"24\\\"\"},{\"Id\":\"T0001935\",\"Name\":\"Aspect Ratio\",\"Value\":\"Widescreen - 16:9\"},{\"Id\":\"T0000283\",\"Name\":\"Response Time\",\"Value\":\"8 ms (gray-to-gray)\"},{\"Id\":\"T0003358\",\"Name\":\"Backlight Technology\",\"Value\":\"LED backlight\"},{\"Id\":\"T0000015\",\"Name\":\"Features\",\"Value\":\"Premium Panel Guarantee\"},{\"Id\":\"T0000118\",\"Name\":\"Color\",\"Value\":\"Black\"},{\"Id\":\"T0000051\",\"Name\":\"Interfaces\",\"Value\":\"1 x VGA / 1 x  DisplayPort\"},{\"Id\":\"T0000098\",\"Name\":\"Cables Included\",\"Value\":\"1 x Power cable / 1 x DP Cable / 1 x VGA Cable (Europe, Middle East, Africa and Japan only)\"},{\"Id\":\"T0000049\",\"Name\":\"Compliant Standards\",\"Value\":\"ENERGY STAR / EPEAT Gold / TCO Certified Displays / RoHS Compliant\"},{\"Id\":\"T0000054\",\"Name\":\"Voltage Required\",\"Value\":\"AC 120/230 V (50/60 Hz)\"},{\"Id\":\"T0005126\",\"Name\":\"ENERGY STAR Certified\",\"Value\":\"Yes\"},{\"Id\":\"Q0000055\",\"Name\":\"Device Type\",\"Value\":\"LED-backlit LCD monitor - 24\\\"\"},{\"Id\":\"Q0000980\",\"Name\":\"Native Resolution\",\"Value\":\"1920 x 1080 at 60Hz\"},{\"Id\":\"Q0001563\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.275 mm x 0.275 mm\"},{\"Id\":\"Q0001564\",\"Name\":\"Brightness\",\"Value\":\"250 cd/m² (typical)\"},{\"Id\":\"Q0001565\",\"Name\":\"Contrast Ratio\",\"Value\":\"1000: 1 (typical)\"},{\"Id\":\"Q0000097\",\"Name\":\"Color Support\",\"Value\":\"Color Gamut (typical): 87% (CIE 1976), 72% (CIE 1931) / Color Depth: 16.7 Million colors\"},{\"Id\":\"Q0001566\",\"Name\":\"Input Connectors\",\"Value\":\"1 x DP (ver 1.2) / 1 x VGA\"},{\"Id\":\"Q0001569\",\"Name\":\"Screen Coating\",\"Value\":\"Antiglare with 3H hardness\"},{\"Id\":\"Q0002322\",\"Name\":\"Dimensions (WxDxH) - with stand\",\"Value\":\"22.15 inches x 7.08 inches x 16.73 inches - Compressed (with stand)\"},{\"Id\":\"Q0000059\",\"Name\":\"Compliant Standards\",\"Value\":\"ENERGY STAR / EPEAT Gold / TCO Certified Displays / RoHS Compliant\"},{\"Id\":\"Q0000762\",\"Name\":\"Aspect Ratio\",\"Value\":\"Widescreen - 16:9\"},{\"Id\":\"Q0000221\",\"Name\":\"Response Time\",\"Value\":\"8 ms (gray-to-gray)\"},{\"Id\":\"Q0000239\",\"Name\":\"Color\",\"Value\":\"Black\"},{\"Id\":\"Q0001359\",\"Name\":\"Environmental Standards\",\"Value\":\"ENERGY STAR Qualified\"}]",
+                "EstimatedShipDate": "2/16/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AIWG_v1/210-AIWG_v1.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "JGD2D",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AIWG",
+                "OrderCode": "E2417HSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AIWG",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$148.19",
+                    "TotalDiscount": "$41.80",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$189.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-16T06:23:05-06:00",
+                "ProductId": "210-AIWG",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24957",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "653",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2818",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "714",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23219",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23220",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23228",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1407",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1409",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25409",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23281",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25146",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2820",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2830",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "143",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24275",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24276",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "125",
+                                "Label": "21\" - 24\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "127",
+                                "Label": "E Models",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "19833",
+                                "Label": "Dell C Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2545",
+                                "Label": "Dell E Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2549",
+                                "Label": "24\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2568",
+                                "Label": "VGA",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "270",
+                                "RefinerLabel": "Response Time",
+                                "Id": "2576",
+                                "Label": "8 ms",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2580",
+                                "Label": "1920 x 1080",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "39",
+                                "RefinerLabel": "Price",
+                                "Id": "154",
+                                "Label": "Below $150",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "69",
+                                "RefinerLabel": "Price",
+                                "Id": "330",
+                                "Label": "$101 - $200",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "4",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "299",
+                "TimeToShip": "",
+                "Title": "Dell 24 Monitor - E2417H"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AIIG",
+                "Description": "",
+                "EstimatedShipDate": "2/19/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AIIG_v2/210-AIIG_v2.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "XVC14",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AIIG",
+                "OrderCode": "P2217HWSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AIIG",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$163.79",
+                    "TotalDiscount": "$46.20",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$209.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-16T06:23:47-06:00",
+                "ProductId": "210-AIIG",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24955",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25254",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "653",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "712",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23219",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23220",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1401",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25409",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23281",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25146",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2820",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23509",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "143",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23311",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24275",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24276",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "125",
+                                "Label": "21\" - 24\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "130",
+                                "Label": "P Models",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "19833",
+                                "Label": "Dell C Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2543",
+                                "Label": "Dell P Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2547",
+                                "Label": "22\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2568",
+                                "Label": "VGA",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "270",
+                                "RefinerLabel": "Response Time",
+                                "Id": "2575",
+                                "Label": "6 ms",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2580",
+                                "Label": "1920 x 1080",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "5",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "300",
+                "TimeToShip": "",
+                "Title": "Dell 22 Monitor - P2217H, without stand"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AMLM",
+                "Description": "[{\"Id\":\"98529\",\"Name\":\"Diagonal Viewing Size\",\"Value\":\"68.47 cm<br>27 inches\"},{\"Id\":\"98530\",\"Name\":\"Panel Type\",\"Value\":\"In-Plane switching Technology\"},{\"Id\":\"98531\",\"Name\":\"Display Screen Coating\",\"Value\":\"Antiglare with hard-coating 3H\"},{\"Id\":\"98532\",\"Name\":\"Backlight Technology\",\"Value\":\"LED\"},{\"Id\":\"98533\",\"Name\":\"Aspect Ratio\",\"Value\":\"16:9\"},{\"Id\":\"98534\",\"Name\":\"Maximum Preset Resolution\",\"Value\":\"3840 x 2160 at 60Hz\"},{\"Id\":\"98535\",\"Name\":\"Viewing Angle\",\"Value\":\"178° vertical / 178° horizontal\"},{\"Id\":\"98536\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.1554 mm x 0.1554 mm\"},{\"Id\":\"98537\",\"Name\":\"Pixel Per Inch (PPI)\",\"Value\":\"163\"},{\"Id\":\"98538\",\"Name\":\"Contrast Ratio\",\"Value\":\"1300 to 1 (typical)\"},{\"Id\":\"98539\",\"Name\":\"Brightness\",\"Value\":\"350 cd/m² (typical)\"},{\"Id\":\"98540\",\"Name\":\"Response Time\",\"Value\":\"5ms (gray to gray)\"},{\"Id\":\"98541\",\"Name\":\"Flat Panel Mount Interface\",\"Value\":\"VESA (100 mm)\"},{\"Id\":\"98542\",\"Name\":\"Adjustability\",\"Value\":\"Height adjustable (130 mm)<br>Tilt (-5° to 21°)<br>Swivel (-45° to 45°)<br>Pivot (90°, clockwise & anti-clockwise directions)\"},{\"Id\":\"98543\",\"Name\":\"PbP / PiP\",\"Value\":\"PbP (No)<br>PiP (No)\"},{\"Id\":\"98544\",\"Name\":\"Daisy Chain Availability\",\"Value\":\"No\"},{\"Id\":\"98545\",\"Name\":\"Dell Display Manager Compatibility\",\"Value\":\"Yes , Easy Arrange and other key features\"},{\"Id\":\"98546\",\"Name\":\"Remote Asset Management\",\"Value\":\"Yes, via Dell Command |Monitor\"},{\"Id\":\"98547\",\"Name\":\"Specifications - Service / Support Details\",\"Value\":\"3-Year Advanced Exchange  Service and Premium Panel Guarantee\"},{\"Id\":\"98548\",\"Name\":\"Color Support\",\"Value\":\"Color Gamut (typical): 99.9% sRGB, 99.9% Rec 709, 80.7% DCI-P3<br>Color Depth:  1.07 Billion colors\"},{\"Id\":\"98549\",\"Name\":\"Color Calibration Accuracy\",\"Value\":\"Delta E < 2 (average)\"},{\"Id\":\"98550\",\"Name\":\"Color Calibration SDK SW\",\"Value\":\"No\"},{\"Id\":\"98551\",\"Name\":\"Color Calibration with X-rite colorimeter\",\"Value\":\"No\"},{\"Id\":\"98552\",\"Name\":\"Connectivity\",\"Value\":\"1 x DP (ver. 1.2)<br>1 x mDP (ver. 1.2)<br>1 x HDMI (ver. 2.0)<br>1 x USB 3.0 port - Upstream<br>4 x USB 3.0 ports , including 2 x USB3.0 BC1.2 charging capability at 2A (max)\"},{\"Id\":\"98553\",\"Name\":\"Audio Output\",\"Value\":\"1 x Audio line-out\"},{\"Id\":\"98554\",\"Name\":\"What's in the Box\",\"Value\":\"Monitor with stand<br>1 x Power cable  1 x mDP-DP cable<br>1 x USB 3.0 upstream cable<br>Drivers and documentation media<br>Quick setup guide<br>Safety, Environmental, and Regulatory Information<br>Factory Calibration Report\"},{\"Id\":\"98555\",\"Name\":\"Operating system supported\",\"Value\":\"Windows 10, 8.1. 7\"},{\"Id\":\"98556\",\"Name\":\"Built-in Devices\",\"Value\":\"USB3.0 super-speed Hub (4 x USB3.0 downstream ports, including 2x USB 3.0 BC1.2 charging port at 2A max.)\"},{\"Id\":\"98557\",\"Name\":\"Security\",\"Value\":\"Security lock slot (cable lock sold separately)<br> Anti-theft stand lock slot (to panel)\"},{\"Id\":\"98558\",\"Name\":\"Width\",\"Value\":\"611.3 mm<br>24.07\\\"\"},{\"Id\":\"98559\",\"Name\":\"Depth\",\"Value\":\"200.3 mm<br>7.89\\\"\"},{\"Id\":\"98560\",\"Name\":\"Height with stand (Compressed ~ Extended)\",\"Value\":\"410.2 mm ~ 540.2 mm<br>16.15\\\" ~ 21.27\\\"\"},{\"Id\":\"98561\",\"Name\":\"Height without stand\",\"Value\":\"356.2 mm<br>14.02\\\"\"},{\"Id\":\"98562\",\"Name\":\"Width without stand\",\"Value\":\"611.3 mm<br>24.07\\\"\"},{\"Id\":\"98563\",\"Name\":\"Depth without stand\",\"Value\":\"49.1 mm<br>1.93\\\"\"},{\"Id\":\"98564\",\"Name\":\"Weight without stand assembly (For wall mount or VESA mount considerations - no cables)\",\"Value\":\"3.70 kg<br>8.16 lb\"},{\"Id\":\"98565\",\"Name\":\"Weight with packaging\",\"Value\":\"9.40 kg<br>20.72 lb\"},{\"Id\":\"98566\",\"Name\":\"Preset Display Area(H X V)\",\"Value\":\"596.74 mm x 335.66 mm<br>23.49\\\" x 13.21\\\"<br>200301.7 sq-mm (310.47 sq-inches)\"},{\"Id\":\"98567\",\"Name\":\"Temperature Range\",\"Value\":\"Operating: 0°C to 40°C (32°F to 104°F)<br>Non-operating: –20°C to 60°C (–4°F to 140°F)\"},{\"Id\":\"98568\",\"Name\":\"Humidity Range\",\"Value\":\"Operating: 10% to 80% (non-condensing)<br>Non-Operating:5% to 90% (non-condensing)\"},{\"Id\":\"98569\",\"Name\":\"Altitude\",\"Value\":\"Operating: 5,000 m (16,404 ft) max<br>Non-Operating: 12,192 m (40,000 ft) max\"},{\"Id\":\"98570\",\"Name\":\"Voltage Required\",\"Value\":\"100 VAC to 240 VAC / 50 Hz or 60 Hz + 3 Hz / 1.5 A (typical)\"},{\"Id\":\"98571\",\"Name\":\"Power Consumption (Operational)\",\"Value\":\"30W (typical) / 99W (maximum) / 24.32W (Energy Star)\"},{\"Id\":\"98572\",\"Name\":\"Power Consumption Stand by / Sleep\",\"Value\":\"Less than 0.3W\"},{\"Id\":\"98573\",\"Name\":\"Compliant Standards\",\"Value\":\"Energy Star certified<br>EPEAT Gold<br> TCO Certified Display<br>RoHS Compliant\"}]",
+                "EstimatedShipDate": "2/19/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AMLM_v1/210-AMLM_v1.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "82Y3V",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AMLM",
+                "OrderCode": "U2718QSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AMLM",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$577.19",
+                    "TotalDiscount": "$162.80",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$739.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-14T18:23:58-06:00",
+                "ProductId": "210-AMLM",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25256",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "654",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2817",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "715",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23217",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23220",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23229",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1404",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25410",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2557",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23283",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25147",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25227",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2844",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2828",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "19435",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "19502",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "19846",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2840",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "152",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24277",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "324",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "801",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "126",
+                                "Label": "25\" - 43\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "131",
+                                "Label": "Premium",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2542",
+                                "Label": "Dell UltraSharp",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2551",
+                                "Label": "27\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "267",
+                                "RefinerLabel": "Technology",
+                                "Id": "19433",
+                                "Label": "4K & 8K",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "267",
+                                "RefinerLabel": "Technology",
+                                "Id": "19856",
+                                "Label": "HDR",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "267",
+                                "RefinerLabel": "Technology",
+                                "Id": "2561",
+                                "Label": "Infinity Edge",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2567",
+                                "Label": "Mini DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2586",
+                                "Label": "3840 x 2160",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "39",
+                                "RefinerLabel": "Price",
+                                "Id": "159",
+                                "Label": "$501 - $600",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "69",
+                                "RefinerLabel": "Price",
+                                "Id": "333",
+                                "Label": "More Than $500",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "6",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "300",
+                "TimeToShip": "",
+                "Title": "Dell UltraSharp 27 4K Monitor: U2718Q"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AIIO",
+                "Description": "",
+                "EstimatedShipDate": "2/16/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AIIO_v1/210-AIIO_v1.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "KF5D2",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AIIO",
+                "OrderCode": "P2417HWSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AIIO",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$202.79",
+                    "TotalDiscount": "$57.20",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$259.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-16T06:22:08-06:00",
+                "ProductId": "210-AIIO",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24957",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "653",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "712",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23219",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23220",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1401",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25409",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23281",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25146",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2820",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23509",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "143",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23311",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24275",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24276",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "125",
+                                "Label": "21\" - 24\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "130",
+                                "Label": "P Models",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "19833",
+                                "Label": "Dell C Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2543",
+                                "Label": "Dell P Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2549",
+                                "Label": "24\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2568",
+                                "Label": "VGA",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "270",
+                                "RefinerLabel": "Response Time",
+                                "Id": "2575",
+                                "Label": "6 ms",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "38",
+                                "RefinerLabel": "Resolution",
+                                "Id": "2580",
+                                "Label": "1920 x 1080",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "7",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "299",
+                "TimeToShip": "",
+                "Title": "Dell 24 Monitor - P2417H, without stand"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "BrandName": "DellDell",
+                "CanAddToCart": false,
+                "Categories": [
+                    {
+                        "Id": "prod/2999/7566/7818/7824/7826/7828",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/4009/6481/8141",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    },
+                    {
+                        "Id": "prod/2999/6488/8222",
+                        "Label": null,
+                        "Count": 0,
+                        "Children": [],
+                        "IdPath": null,
+                        "LabelPath": null,
+                        "Refiners": null
+                    }
+                ],
+                "CompatibleWithProducts": [],
+                "CustomerSet": "rc1361795",
+                "DellPartNumber": "210-AIIJ",
+                "Description": "[{\"Id\":\"T0000195\",\"Name\":\"Display Type\",\"Value\":\"LED-backlit LCD monitor / TFT active matrix\"},{\"Id\":\"T0002026\",\"Name\":\"Energy Class\",\"Value\":\"Class A+\"},{\"Id\":\"T0000236\",\"Name\":\"Diagonal Size\",\"Value\":\"19\\\"\"},{\"Id\":\"T0000237\",\"Name\":\"Viewable Size\",\"Value\":\"19\\\"\"},{\"Id\":\"T0000117\",\"Name\":\"Built-in Devices\",\"Value\":\"USB 3.0 hub\"},{\"Id\":\"T0003356\",\"Name\":\"Panel Type\",\"Value\":\"IPS\"},{\"Id\":\"T0001935\",\"Name\":\"Aspect Ratio\",\"Value\":\"5:4\"},{\"Id\":\"T0002261\",\"Name\":\"Native Resolution\",\"Value\":\"1280 x 1024 at 60 Hz\"},{\"Id\":\"T0000648\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.293 mm\"},{\"Id\":\"T0000810\",\"Name\":\"Brightness\",\"Value\":\"250 cd/m²\"},{\"Id\":\"T0003350\",\"Name\":\"Contrast Ratio\",\"Value\":\"1000:1\"},{\"Id\":\"T0000174\",\"Name\":\"Color Support\",\"Value\":\"16.7 million colors\"},{\"Id\":\"T0000283\",\"Name\":\"Response Time\",\"Value\":\"6 ms (gray-to-gray)\"},{\"Id\":\"T0003351\",\"Name\":\"Horizontal Viewing Angle\",\"Value\":\"178\"},{\"Id\":\"T0003352\",\"Name\":\"Vertical Viewing Angle\",\"Value\":\"178\"},{\"Id\":\"T0003358\",\"Name\":\"Backlight Technology\",\"Value\":\"LED backlight\"},{\"Id\":\"T0000015\",\"Name\":\"Features\",\"Value\":\"Ultra wide viewing angle, Flicker Free technology, Premium Panel Guarantee, Dell Easy Arrange\"},{\"Id\":\"T0000118\",\"Name\":\"Color\",\"Value\":\"Black\"},{\"Id\":\"T0001410\",\"Name\":\"Dimensions (WxDxH)\",\"Value\":\"16 in x 7.1 in x 14.5 in - with stand\"},{\"Id\":\"T0000022\",\"Name\":\"Weight\",\"Value\":\"11.31 lbs\"},{\"Id\":\"T0000051\",\"Name\":\"Interfaces\",\"Value\":\"<ul><li>HDMI</li><li>DisplayPort</li><li>VGA</li><li>USB 3.0 upstream (Type B)</li><li>2 x USB 2.0 downstream (Type A)</li><li>2 x USB 3.0 downstream (Type A)</li></ul>\"},{\"Id\":\"T0003354\",\"Name\":\"Display Position Adjustments\",\"Value\":\"Height, pivot (rotation), swivel, tilt\"},{\"Id\":\"T0000098\",\"Name\":\"Cables Included\",\"Value\":\"<ul><li>1 x VGA cable - VGA to VGA</li><li>1 x DisplayPort cable - DisplayPort to DisplayPort</li><li>1 x SuperSpeed USB cable - USB Type A to B</li></ul>\"},{\"Id\":\"T0000049\",\"Name\":\"Compliant Standards\",\"Value\":\"TCO Displays\"},{\"Id\":\"T0000054\",\"Name\":\"Voltage Required\",\"Value\":\"AC 120/230 V (50/60 Hz)\"},{\"Id\":\"T0005126\",\"Name\":\"ENERGY STAR Certified\",\"Value\":\"Yes\"},{\"Id\":\"Q0000055\",\"Name\":\"Device Type\",\"Value\":\"LED-backlit LCD monitor - 19\\\"\"},{\"Id\":\"Q0000819\",\"Name\":\"Energy Class\",\"Value\":\"Class A+\"},{\"Id\":\"Q0000012\",\"Name\":\"Features\",\"Value\":\"USB 3.0 hub\"},{\"Id\":\"Q0001568\",\"Name\":\"Panel Type\",\"Value\":\"IPS\"},{\"Id\":\"Q0000762\",\"Name\":\"Aspect Ratio\",\"Value\":\"5:4\"},{\"Id\":\"Q0000980\",\"Name\":\"Native Resolution\",\"Value\":\"1280 x 1024 at 60 Hz\"},{\"Id\":\"Q0001563\",\"Name\":\"Pixel Pitch\",\"Value\":\"0.293 mm\"},{\"Id\":\"Q0001564\",\"Name\":\"Brightness\",\"Value\":\"250 cd/m²\"},{\"Id\":\"Q0001565\",\"Name\":\"Contrast Ratio\",\"Value\":\"1000:1\"},{\"Id\":\"Q0000221\",\"Name\":\"Response Time\",\"Value\":\"6 ms (gray-to-gray)\"},{\"Id\":\"Q0000097\",\"Name\":\"Color Support\",\"Value\":\"16.7 million colors\"},{\"Id\":\"Q0001566\",\"Name\":\"Input Connectors\",\"Value\":\"HDMI, VGA, DisplayPort\"},{\"Id\":\"Q0001567\",\"Name\":\"Display Position Adjustments\",\"Value\":\"Height, pivot (rotation), swivel, tilt\"},{\"Id\":\"Q0000239\",\"Name\":\"Color\",\"Value\":\"Black\"},{\"Id\":\"Q0002322\",\"Name\":\"Dimensions (WxDxH) - with stand\",\"Value\":\"16 in x 7.1 in x 14.5 in\"},{\"Id\":\"Q0000016\",\"Name\":\"Weight\",\"Value\":\"11.31 lbs\"},{\"Id\":\"Q0001359\",\"Name\":\"Environmental Standards\",\"Value\":\"ENERGY STAR Qualified\"},{\"Id\":\"Q0000059\",\"Name\":\"Compliant Standards\",\"Value\":\"TCO Displays\"}]",
+                "EstimatedShipDate": "2/16/2018",
+                "EstimatedShipDateUrl": null,
+                "Image": "//snpi.dell.com/snp/images2/300/en-us~210-AIIJ_v1/210-AIIJ_v1.jpg",
+                "IsForProduct": false,
+                "IsSmartSelect": false,
+                "IsTaaCompliant": true,
+                "ManufacturerName": "Dell",
+                "ManufacturerPartNumber": "GTNGM",
+                "MoreDetailsLink": "//www.dell.com/Accessories/us/en/rc1361795/Product/Details/210-AIIJ",
+                "OrderCode": "P1917SSAP",
+                "PremierSnpAddToCart": "//www.dell.com/Accessories/us/en/rc1361795/Cart/Add/210-AIIJ",
+                "Price": {
+                    "RetailPrice": null,
+                    "SalePrice": "$194.99",
+                    "TotalDiscount": "$55.00",
+                    "ShowAddToCartMessage": false,
+                    "StartingPrice": "$249.99",
+                    "PriceMessage": null,
+                    "PriceFootNoteMessage": null,
+                    "ProductMessage": null,
+                    "LegalBirdseed": null,
+                    "TaxIncluded": false,
+                    "CustomerSet": null,
+                    "SVLProduct": null
+                },
+                "PriceRetrievalUrl": null,
+                "ProcessingTime": "2018-02-16T06:23:51-06:00",
+                "ProductId": "210-AIIJ",
+                "Purpose": "STP",
+                "Rank": "1079877",
+                "Refinements": [
+                    {
+                        "CategoryPath": null,
+                        "CategoryLabel": null,
+                        "Refinements": [
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24955",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25254",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "652",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "655",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "19353",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2819",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "712",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23219",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23230",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1398",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "1401",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25408",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25416",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2792",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23281",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25146",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25226",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25260",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2821",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2836",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "23509",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2834",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2843",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "136",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25310",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24275",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "24276",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "25272",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "2768",
+                                "Label": null,
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": null,
+                                "RefinerLabel": null,
+                                "Id": "397",
+                                "Label": null,
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/7566/7818/7824/7826/7828",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "203",
+                                "RefinerLabel": "Brand",
+                                "Id": "967",
+                                "Label": "Dell",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "3",
+                                "RefinerLabel": "Screen Size",
+                                "Id": "5",
+                                "Label": "20\" & Below",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "37",
+                                "RefinerLabel": "Monitor Type",
+                                "Id": "130",
+                                "Label": "P Models",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/4009/6481/8141",
+                        "CategoryLabel": "Monitors",
+                        "Refinements": [
+                            {
+                                "RefinerId": "265",
+                                "RefinerLabel": "Series",
+                                "Id": "2543",
+                                "Label": "Dell P Model",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "266",
+                                "RefinerLabel": "Size",
+                                "Id": "2546",
+                                "Label": "19\"",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2566",
+                                "Label": "DisplayPort",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2568",
+                                "Label": "VGA",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "269",
+                                "RefinerLabel": "Ports",
+                                "Id": "2569",
+                                "Label": "HDMI",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "270",
+                                "RefinerLabel": "Response Time",
+                                "Id": "2575",
+                                "Label": "6 ms",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "39",
+                                "RefinerLabel": "Price",
+                                "Id": "155",
+                                "Label": "$150 - $200",
+                                "Score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "CategoryPath": "prod/2999/6488/8222",
+                        "CategoryLabel": "Gaming Accessories",
+                        "Refinements": [
+                            {
+                                "RefinerId": "69",
+                                "RefinerLabel": "Price",
+                                "Id": "330",
+                                "Label": "$101 - $200",
+                                "Score": 0
+                            },
+                            {
+                                "RefinerId": "70",
+                                "RefinerLabel": "Brand",
+                                "Id": "345",
+                                "Label": "Dell",
+                                "Score": 0
+                            }
+                        ]
+                    }
+                ],
+                "ResultNumber": "8",
+                "Segment": "bsd",
+                "ShowDiscount": true,
+                "ShowViewDetailsButton": true,
+                "SmartSelectPopoverUrl": null,
+                "StockStatusId": "299",
+                "TimeToShip": "",
+                "Title": "Dell 19 Monitor - P1917S"
+            },
+            "TemplateName": "PremierSnpDoctypeInterpreter",
+            "TemplateId": null,
+            "Purpose": "Product",
+            "UserQuery": "monitor",
+            "FastQuery": null,
+            "ResultCount": 8,
+            "StrategyName": "PremierProductStrategy",
+            "StrategyHandlerName": "PremierProductStrategyHandler"
+        },
+        {
+            "Data": {
+                "Skip": 8,
+                "Strategy": "PremierProductStrategy"
+            },
+            "TemplateName": "PagingTemplate",
+            "TemplateId": null,
+            "Purpose": null,
+            "UserQuery": null,
+            "FastQuery": null,
+            "ResultCount": 0,
+            "StrategyName": null,
+            "StrategyHandlerName": null
+        }
+    ],
+    "Graph": null,
+    "Log": [
+        "p(ProductInfoStrategy)(0) => (p(No_Signals)(0))/(No_Signals-Strength(1))",
+        "p(PremierProductStrategy)(0.925925925925926) => (p(SystemsCategories)(0.8) + p(SnpCategories)(0.4) + p(SnpManufacturers)(0.8) + p(Premier)(0) + p(UserProfile)(0) + p(User Query)(0) + p(Final Query)(0) + p(AvailabilityRules)(0) + p(CustomerSetDetail)(1) + p(SnpCustomerDetails)(1) + p(EnterpriseSettings)(1) + p(PagingOptionsSignal)(0) + p(NoResultsTemplateSettings)(0))/(SystemsCategories-Strength(0.8) + SnpCategories-Strength(0.8) + SnpManufacturers-Strength(0.8) + Premier-Strength(0) + UserProfile-Strength(0) + User Query-Strength(0) + Final Query-Strength(0) + AvailabilityRules-Strength(0) + CustomerSetDetail-Strength(1) + SnpCustomerDetails-Strength(1) + EnterpriseSettings-Strength(1) + PagingOptionsSignal-Strength(0) + NoResultsTemplateSettings-Strength(0))",
+        "      p(SystemsCategories)(0.8) => Strength(0.8) * InverseCountFormula<1,10>(1)",
+        "            InverseCountFormula<1,10> calculation for SystemsCategories signal",
+        "                  Count for Signal was (1). Probability = (1)",
+        "      p(SnpCategories)(0.4) => Strength(0.8) * InverseCountFormula<1,10>(0.5)",
+        "            InverseCountFormula<1,10> calculation for SnpCategories signal",
+        "                  Count for Signal was (6) which is between the range of (1) and (10). Probability = (0.5)",
+        "      p(SnpManufacturers)(0.8) => Strength(0.8) * InverseCountFormula<1,10>(1)",
+        "            InverseCountFormula<1,10> calculation for SnpManufacturers signal",
+        "                  Count for Signal was (1). Probability = (1)",
+        "      p(Premier)(0) => Strength(0) * NoOp(0)",
+        "      p(UserProfile)(0) => Strength(0) * NoOp(0)",
+        "      p(User Query)(0) => Strength(0) * NoOp(0)",
+        "      p(Final Query)(0) => Strength(0) * NoOp(0)",
+        "      p(AvailabilityRules)(0) => Strength(0) * NoOp(0)",
+        "      p(CustomerSetDetail)(1) => Strength(1) * SignalPresent(1)",
+        "      p(SnpCustomerDetails)(1) => Strength(1) * SignalPresent(1)",
+        "      p(EnterpriseSettings)(1) => Strength(1) * SignalPresent(1)",
+        "      p(PagingOptionsSignal)(0) => Strength(0) * NoOp(0)",
+        "      p(NoResultsTemplateSettings)(0) => Strength(0) * NoOp(0)",
+        "p(SupportStrategy)(-0.25) => (p(SupportCategories)(0.1) + p(SnpCategories)(-0.1) + p(SpellCheck)(0) + p(Experiments)(0) + p(Final Query)(0) + p(User Query)(0) + p(UserProfile)(0) + p(LinguisticProcessingResponse)(0) + p(PagingOptionsSignal)(0) + p(SystemsCategories)(-0.1))/(SupportCategories-Strength(0.1) + SnpCategories-Strength(-0.2) + SpellCheck-Strength(0) + Experiments-Strength(0) + Final Query-Strength(0) + User Query-Strength(0) + UserProfile-Strength(0) + LinguisticProcessingResponse-Strength(0) + PagingOptionsSignal-Strength(0) + SystemsCategories-Strength(-0.1))",
+        "      p(SupportCategories)(0.1) => Strength(0.1) * InverseCountFormula<1,3>(1)",
+        "            InverseCountFormula<1,3> calculation for SupportCategories signal",
+        "                  Count for Signal was (1). Probability = (1)",
+        "      p(SnpCategories)(-0.1) => Strength(-0.2) * InverseCountFormula<1,10>(0.5)",
+        "            InverseCountFormula<1,10> calculation for SnpCategories signal",
+        "                  Count for Signal was (6) which is between the range of (1) and (10). Probability = (0.5)",
+        "      p(SpellCheck)(0) => Strength(0) * NoOp(0)",
+        "      p(Experiments)(0) => Strength(0) * NoOp(0)",
+        "      p(Final Query)(0) => Strength(0) * NoOp(0)",
+        "      p(User Query)(0) => Strength(0) * NoOp(0)",
+        "      p(UserProfile)(0) => Strength(0) * NoOp(0)",
+        "      p(LinguisticProcessingResponse)(0) => Strength(0) * NoOp(0)",
+        "      p(PagingOptionsSignal)(0) => Strength(0) * NoOp(0)",
+        "      p(SystemsCategories)(-0.1) => Strength(-0.1) * SignalPresent(1)",
+        "p(BreadcrumbsStrategy)(NaN) => (p(User Query)(0))/(User Query-Strength(0))",
+        "      p(User Query)(0) => Strength(0) * NoOp(0)",
+        "p(NotAuthorizedStrategy)(0) => (p(No_Signals)(0))/(No_Signals-Strength(1))",
+        "p(EssentialContentStrategy)(1) => (p(EssentialContent)(1))/(EssentialContent-Strength(1))",
+        "      p(EssentialContent)(1) => Strength(1) * SignalPresent(1)",
+        "p(TertiaryContentStrategy)(1) => (p(TertiaryContent)(1))/(TertiaryContent-Strength(1))",
+        "      p(TertiaryContent)(1) => Strength(1) * SignalPresent(1)",
+        "p(StandardConfigurationStrategy)(NaN) => (p(UserProfile)(0))/(UserProfile-Strength(0))",
+        "      p(UserProfile)(0) => Strength(0) * NoOp(0)"
+    ],
+    "AdditionalInformation": {
+        "Signal Summary": "User Query(1), Experiments(12), UrlReferrer(1), UserProfile(1), Final Query(1), SpellCheck(0), QueryUnderstandingQuery(2), Direct Content(1), SnpManufacturers(1), SnpCategories(1), SupportCategories(1), SystemsCategories(1), LinguisticProcessingResponse(1), Premier(1), AvailabilityRules(1), CustomerSetDetail(1), SnpCustomerDetails(1), StandardConfigurationProducts(0), EnterpriseSettings(1), PagingOptionsSignal(1), EssentialContent(1), NoResultsTemplateSettings(1), SuggestedSupportedProducts(1), QueryHistory(1), TertiaryContent(1)",
+        "Strategy Summary": "BreadcrumbsStrategy(NaN), EssentialContentStrategy(1), TertiaryContentStrategy(1), PremierProductStrategy(0.925925925925926), ProductInfoStrategy(0), NotAuthorizedStrategy(0), SupportStrategy(-0.25), StandardConfigurationStrategy(NaN)",
+        "OverrideTerm": "false",
+        "ResultCount-Products": "2172"
+    },
+    "TimingsInMilliseconds": null,
+    "ResponseOptionFlags": {
+        "AddToHistory": false
     }
-  ],
-  "comments" : [
-    {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+}];
+
+constructor(){
+  for(let arr of this.jsonData){
+       Object.keys(arr) && Object.keys(arr).map((key)=>{
+          console.log("push")
+          this.jsonDataKeys.push(key);
+        });
     }
-  ]
 }
+
+}
+
+
